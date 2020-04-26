@@ -23,7 +23,6 @@
               01 EVENING-TABLE.
                  05 EVENING-ACTIVITY PIC X(30) OCCURS 3 TIMES.    
             PROCEDURE DIVISION.
-
               DISPLAY ' _______  _______  __   __  ___   ______   '.
               DISPLAY "|       ||       ||  | |  ||   | |      | ".
               DISPLAY "|       ||   _   ||  |_|  ||   | |  _    |".
@@ -99,7 +98,7 @@
               DISPLAY "                                            ".
               DISPLAY "                                          ".
               DISPLAY "                                          ".
-
+              
               ACCEPT CURRENT FROM TIME.
               COMPUTE CURRENT = CURRENT * QUESTION-1
               MOVE CURRENT TO RND.
