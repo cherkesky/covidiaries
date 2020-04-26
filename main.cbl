@@ -86,7 +86,7 @@
               DISPLAY "===============================================".
               ACCEPT QUESTION-2.    
                
-               IF QUESTION-1 < 1 OR QUESTION-1 > 763
+               IF QUESTION-2 < 1 OR QUESTION-1 > 763
                    PERFORM 'ERR-PARA'
 
               DISPLAY " ".
@@ -107,7 +107,7 @@
               DISPLAY "     5 - I think I'll just stay home".
               ACCEPT QUESTION-3.
 
-              IF QUESTION-1 < 1 OR QUESTION-1 > 5
+              IF QUESTION-3 < 1 OR QUESTION-1 > 5
                    PERFORM 'ERR-PARA'
 
               DISPLAY "                                            ".
