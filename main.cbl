@@ -1,14 +1,18 @@
            *> setup the identification division
             IDENTIFICATION DIVISION.
             *> setup the program id
-            PROGRAM-ID. ARRAYS.
+            PROGRAM-ID. COVIDIARIES.
             
             *> setup the procedure division (like 'main' function)
             DATA DIVISION.
               *> working storage defines variables
               WORKING-STORAGE SECTION.
               01 NAME-VAR PIC A(5) VALUE 'WORLD'.
-              01 QUESTION PIC A(8).
+              01 USER-INPUT.
+                 05 USER-NAME PIC A(10).
+                 05 IN-1 PIC 9(3).
+                 05 IN-2 PIC 9(3).
+                 05 IN-2 PIC 9(3).
               01 ACTIVITIES-TABLE.
                  05 ACTIVITY-NAME PIC X(30) OCCURS 3 TIMES.
             
@@ -28,8 +32,8 @@
               DISPLAY "|_______||_______|  |___|  |___| |______| ".
 
               DISPLAY "What is your name?".
-              ACCEPT QUESTION.
-              display "Hello " QUESTION.
+              ACCEPT USER-NAME.
+              display "Hello, " USER-NAME.
             
             *> end our program
             STOP RUN.
