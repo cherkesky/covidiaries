@@ -12,6 +12,10 @@
                  05 QUESTION-1 PIC 9(3).
                  05 QUESTION-2 PIC 9(3).
                  05 QUESTION-3 PIC 9(3).
+              01 C PIC 9(3).
+              01 R PIC 9(1).
+              01 CURRENT PIC 9(3).
+              01 RND PIC 9(3).
               01 MORNING-TABLE.
                  05 MORNING-ACTIVITY PIC X(30) OCCURS 3 TIMES.
               01 NOON-TABLE.
@@ -54,9 +58,6 @@
 
               DISPLAY "What is your name?".
               ACCEPT USER-NAME.
-              display "Hello, " USER-NAME.
-              DISPLAY "What is your name?".
-              ACCEPT USER-NAME.
               DISPLAY "Hello, " USER-NAME.
 
               DISPLAY "I'll help you create today's quarantine agenda."
@@ -90,7 +91,18 @@
               DISPLAY "     5 - My front porch".
               ACCEPT QUESTION-3.
               
-
+              ACCEPT CURRENT FROM TIME.
+              MOVE CURRENT TO RND.
+              DIVIDE RND BY 4 GIVING C REMAINDER QUESTION-1.
+              IF R = 0 THEN
+                MOVE 1 TO R
+             DISPLAY "MORNING ACTIVITY: "MORNING-ACTIVITY(QUESTION-1).
+              
+            *>   DISPLAY "QUESTION-1: " QUESTION-1.
+            *>   DISPLAY "CURRENT " CURRENT.
+            *>   DISPLAY "RND: " RND.
+            *>   DISPLAY "C: " C.
+            *>   DISPLAY "R: " R.
             
             *> end our program
             STOP RUN.
