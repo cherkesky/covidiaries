@@ -18,6 +18,10 @@
                  05 QUESTION-1 PIC 9(3).
                  05 QUESTION-2 PIC 9(3).
                  05 QUESTION-3 PIC 9(3).
+              01 C PIC 9(3).
+              01 R PIC 9(1).
+              01 CURRENT PIC 9(3).
+              01 RND PIC 9(3).
               01 MORNING-TABLE.
                  05 MORNING-ACTIVITY PIC X(30) OCCURS 3 TIMES.
               01 NOON-TABLE.
@@ -61,7 +65,12 @@
 
               DISPLAY "What is your name?".
               ACCEPT USER-NAME.
+<<<<<<< HEAD
               DISPLAY "                                          ".
+=======
+              DISPLAY "Hello, " USER-NAME.
+
+>>>>>>> 176347a5d1291fa99a95685545f433ec3b3a8baa
               DISPLAY "I'll help you create today's quarantine agenda."
               DISPLAY "Just answer a few questions to get started."
 
@@ -75,25 +84,43 @@
               ACCEPT QUESTION-1.
               DISPLAY " ".
               
-              *> DISPLAY "On a scale of 1 - 638596, how much do you miss".
-              *> DISPLAY "brunch?".
-              *> ACCEPT QUESTION-2.    
-              *> DISPLAY " ".
+              DISPLAY "On a scale of 1 - 638596, how much do you miss".
+              DISPLAY "brunch?".
+              ACCEPT QUESTION-2.    
+              DISPLAY " ".
               
-              *> DISPLAY "Great, last question:".
-              *> DISPLAY "Where will you go for your first post-social". 
-              *> DISPLAY "distancing destination?".
-              *> DISPLAY "     1 - Salon. Hair, nails, the works.".
-              *> DISPLAY "     2 - The tattoo shop for a commemorative 'I". 
-              *> DISPLAY "         survived quarantine and all I got was" 
-              *> DISPLAY "         this lousy tattoo' tattoo".
-              *> DISPLAY "     3 - I'm leaving on a jet plane. Don't know". 
-              *> DISPLAY "         when I'll be back again.".
-              *> DISPLAY "     4 - No, OMG, stop, David".
-              *> DISPLAY "     5 - My front porch".
-              *> ACCEPT QUESTION-3.
+              DISPLAY "Great, last question:".
+              DISPLAY "Where will you go for your first post-social". 
+              DISPLAY "distancing destination?".
+              DISPLAY "     1 - Salon. Hair, nails, the works.".
+              DISPLAY "     2 - The tattoo shop for a commemorative 'I". 
+              DISPLAY "         survived quarantine and all I got was" 
+              DISPLAY "         this lousy tattoo' tattoo".
+              DISPLAY "     3 - I'm leaving on a jet plane. Don't know". 
+              DISPLAY "         when I'll be back again.".
+              DISPLAY "     4 - No, OMG, stop, David".
+              DISPLAY "     5 - My front porch".
+              ACCEPT QUESTION-3.
               
-           
+              ACCEPT CURRENT FROM TIME.
+              MOVE CURRENT TO RND.
+              DIVIDE RND BY 4 GIVING C REMAINDER QUESTION-1.
+              IF R = 0 THEN
+                MOVE 1 TO R
+             DISPLAY "MORNING ACTIVITY: "MORNING-ACTIVITY(QUESTION-1).
+              
+             ACCEPT CURRENT FROM TIME.
+              MOVE CURRENT TO RND.
+              DIVIDE RND BY 4 GIVING C REMAINDER QUESTION-1.
+              IF R = 0 THEN
+                MOVE 1 TO R
+             DISPLAY "NOON ACTIVITY: "NOON-ACTIVITY(QUESTION-1).
 
+            ACCEPT CURRENT FROM TIME.
+              MOVE CURRENT TO RND.
+              DIVIDE RND BY 4 GIVING C REMAINDER QUESTION-1.
+              IF R = 0 THEN
+                MOVE 1 TO R
+             DISPLAY "EVENING ACTIVITY: "EVENING-ACTIVITY(QUESTION-1).
             *> end our program
             STOP RUN.
