@@ -28,10 +28,18 @@
               DISPLAY "|     |_ |       | |     | |   | |       | ".
               DISPLAY "|_______||_______|  |___|  |___| |______| ".
               
-              MOVE "HAVE A SNACK" TO ACTIVITY-NAME(1).
-              MOVE "BINGE NETFLIX" TO ACTIVITY-NAME(2).
-              MOVE "EXERCISE. HAHA JUST KIDDING" TO ACTIVITY-NAME(3).
-              
+              MOVE "HAVE A SNACK" TO MORNING-ACTIVITY(1).
+              MOVE "BINGE NETFLIX" TO MORNING-ACTIVITY(2).
+              MOVE "EXERCISE. HAHA JUST KIDDING" TO MORNING-ACTIVITY(3).
+
+              MOVE "HAVE A SNACK" TO NOON-ACTIVITY(1).
+              MOVE "TAKE A NAP" TO NOON-ACTIVITY(2).
+              MOVE "LEARN COBOL" TO NOON-ACTIVITY(3). 
+
+              MOVE "HAVE A SNACK" TO EVENING-ACTIVITY(1).
+              MOVE "THINK OF A $1M IDEA" TO EVENING-ACTIVITY(2).
+              MOVE "PLAN THE NEXT VACATION" TO EVENING-ACTIVITY(3).  
+
               DISPLAY "What is your name?".
               ACCEPT USER-NAME.
               display "Hello, " USER-NAME.
