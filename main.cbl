@@ -78,7 +78,7 @@
               ACCEPT QUESTION-1.
               
               IF QUESTION-1 < 1 OR QUESTION-1 > 3
-                   PERFORM 'ERR-PARA'
+                   PERFORM 'ERR-PARA'.
 
               DISPLAY "===============================================".
               DISPLAY "On a scale of 1 - 763, how much do you miss".
@@ -86,8 +86,8 @@
               DISPLAY "===============================================".
               ACCEPT QUESTION-2.    
                
-               IF QUESTION-2 < 1 OR QUESTION-1 > 763
-                   PERFORM 'ERR-PARA'
+               IF QUESTION-2 < 1 OR QUESTION-2 > 763
+                   PERFORM 'ERR-PARA'.
 
               DISPLAY " ".
 
@@ -107,8 +107,8 @@
               DISPLAY "     5 - I think I'll just stay home".
               ACCEPT QUESTION-3.
 
-              IF QUESTION-3 < 1 OR QUESTION-1 > 5
-                   PERFORM 'ERR-PARA'
+              IF QUESTION-3 < 1 OR QUESTION-3 > 5
+                   PERFORM 'ERR-PARA'.
 
               DISPLAY "                                            ".
               DISPLAY "                                          ".
@@ -148,10 +148,11 @@
              DISPLAY "===============================================".   
              DISPLAY "EVENING ACTIVITY: "EVENING-ACTIVITY(R).
              DISPLAY "===============================================".   
-
+            *> end our program
+            STOP RUN.
+            
                ERR-PARA.
                DISPLAY "Invalid input. Exiting program :(".
                STOP RUN.
 
-            *> end our program
-            STOP RUN.
+
