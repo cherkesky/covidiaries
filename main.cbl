@@ -55,15 +55,21 @@
               MOVE "HAVE A SNACK" TO EVENING-ACTIVITY(1).
               MOVE "THINK OF A $1M IDEA" TO EVENING-ACTIVITY(2).
               MOVE "PLAN THE NEXT VACATION" TO EVENING-ACTIVITY(3).  
-
-              DISPLAY "What is your name?".
-              ACCEPT USER-NAME.
-              DISPLAY "                                          ".
-              DISPLAY "I'll help you create today's quarantine agenda."
-              DISPLAY "Just answer a few questions to get started."
-
               
+              DISPLAY "==================".
+              DISPLAY "What is your name?".
+              DISPLAY "==================".
+              ACCEPT USER-NAME.
+               
+              DISPLAY "                                          ".
+              DISPLAY "Thanks " USER-NAME.
+              DISPLAY "I'll help you create today's quarantine agenda.".
+              DISPLAY "Just answer a few questions to get started.".
+              DISPLAY "                                          ".
+ç
+              DISPLAY "=======================================".
               DISPLAY "First, how much do you like quarantine?".
+              DISPLAY "=======================================".
               DISPLAY "     1 - It's not much of a change from my".
               DISPLAY "         regular routine".
               DISPLAY "     2 - I want to bust through the walls like ".
@@ -72,14 +78,18 @@
               ACCEPT QUESTION-1.
               DISPLAY " ".
               
+              DISPLAY "===============================================".
               DISPLAY "On a scale of 1 - 638596, how much do you miss".
               DISPLAY "brunch?".
+              DISPLAY "===============================================".
               ACCEPT QUESTION-2.    
               DISPLAY " ".
               
+              DISPLAY "===============================================".
               DISPLAY "Great, last question:".
               DISPLAY "Where will you go for your first post-social". 
               DISPLAY "distancing destination?".
+              DISPLAY "===============================================".
               DISPLAY "     1 - Salon. Hair, nails, the works.".
               DISPLAY "     2 - The tattoo shop for a commemorative 'I". 
               DISPLAY "         survived quarantine and all I got was" 
@@ -92,28 +102,32 @@
 
               DISPLAY "                                            ".
               DISPLAY "                                          ".
-              DISPLAY "                                          ".
+              DISPLAY "===============================".
               DISPLAY "OK " USER-NAME.
               DISPLAY "This is what we got for you...               ".
-              DISPLAY "                                            ".
+              DISPLAY "===============================".
               DISPLAY "                                          ".
               DISPLAY "                                          ".
-              
+
               ACCEPT CURRENT FROM TIME.
               COMPUTE CURRENT = CURRENT * QUESTION-1
               MOVE CURRENT TO RND.
               DIVIDE RND BY 4 GIVING C REMAINDER R.
               IF R = 0 THEN
                 MOVE 1 TO R.
+             DISPLAY "===============================================".   
              DISPLAY "MORNING ACTIVITY: "MORNING-ACTIVITY(R).
-              
+             DISPLAY "===============================================".   
+
              ACCEPT CURRENT FROM TIME.
              COMPUTE CURRENT = CURRENT * QUESTION-1
               MOVE CURRENT TO RND.
               DIVIDE RND BY 4 GIVING C REMAINDER R.
               IF R = 0 THEN
                 MOVE 1 TO R.
+             DISPLAY "===============================================".      
              DISPLAY "NOON ACTIVITY: "NOON-ACTIVITY(R).
+             DISPLAY "===============================================".   
 
             ACCEPT CURRENT FROM TIME.
              COMPUTE CURRENT = CURRENT * QUESTION-1
@@ -121,7 +135,9 @@
               DIVIDE RND BY 4 GIVING C REMAINDER R.
               IF R = 0 THEN
                 MOVE 1 TO R.
+             DISPLAY "===============================================".   
              DISPLAY "EVENING ACTIVITY: "EVENING-ACTIVITY(R).
+             DISPLAY "===============================================".   
 
             *> end our program
             STOP RUN.
