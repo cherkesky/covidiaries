@@ -27,7 +27,19 @@
               DISPLAY "|      _||  |_|  ||       ||   | | |_|   | ".
               DISPLAY "|     |_ |       | |     | |   | |       | ".
               DISPLAY "|_______||_______|  |___|  |___| |______| ".
-              
+              DISPLAY " ______   ___   _______  ______    __   __ ".
+              DISPLAY "|      | |   | |   _   ||    _ |  |  | |  |".
+              DISPLAY "|  _    ||   | |  |_|  ||   | ||  |  |_|  |".
+              DISPLAY "| | |   ||   | |       ||   |_||_ |       |".
+              DISPLAY "| |_|   ||   | |       ||    __  ||_     _|".
+              DISPLAY "|       ||   | |   _   ||   |  | |  |   |  ".
+              DISPLAY "|______| |___| |__| |__||___|  |_|  |___|  ".
+              DISPLAY "                                           ".
+              DISPLAY "                  \__/                     ".
+              DISPLAY "                  (oo)                     ".
+              DISPLAY "                 //||\\                    ".
+              DISPLAY "                                          ".
+
               MOVE "HAVE A SNACK" TO MORNING-ACTIVITY(1).
               MOVE "BINGE NETFLIX" TO MORNING-ACTIVITY(2).
               MOVE "EXERCISE. HAHA JUST KIDDING" TO MORNING-ACTIVITY(3).
