@@ -7,12 +7,6 @@
             DATA DIVISION.
               *> working storage defines variables
               WORKING-STORAGE SECTION.
-              01 CALC PIC 9(3).
-              01 RND PIC 9(3).
-              01 CURRENT PIC 9(3).
-              01 C PIC 9(1).
-              01 R PIC 9(3).
-
               01 USER-INPUT.
                  05 USER-NAME PIC A(10).
                  05 QUESTION-1 PIC 9(3).
@@ -65,12 +59,7 @@
 
               DISPLAY "What is your name?".
               ACCEPT USER-NAME.
-<<<<<<< HEAD
               DISPLAY "                                          ".
-=======
-              DISPLAY "Hello, " USER-NAME.
-
->>>>>>> 176347a5d1291fa99a95685545f433ec3b3a8baa
               DISPLAY "I'll help you create today's quarantine agenda."
               DISPLAY "Just answer a few questions to get started."
 
@@ -101,26 +90,39 @@
               DISPLAY "     4 - No, OMG, stop, David".
               DISPLAY "     5 - My front porch".
               ACCEPT QUESTION-3.
-              
+
+              DISPLAY "                                            ".
+              DISPLAY "                                          ".
+              DISPLAY "                                          ".
+              DISPLAY "OK " USER-NAME.
+              DISPLAY "This is what we got for you...               ".
+              DISPLAY "                                            ".
+              DISPLAY "                                          ".
+              DISPLAY "                                          ".
+
               ACCEPT CURRENT FROM TIME.
+              COMPUTE CURRENT = CURRENT * QUESTION-1
               MOVE CURRENT TO RND.
-              DIVIDE RND BY 4 GIVING C REMAINDER QUESTION-1.
+              DIVIDE RND BY 4 GIVING C REMAINDER R.
               IF R = 0 THEN
-                MOVE 1 TO R
-             DISPLAY "MORNING ACTIVITY: "MORNING-ACTIVITY(QUESTION-1).
+                MOVE 1 TO R.
+             DISPLAY "MORNING ACTIVITY: "MORNING-ACTIVITY(R).
               
              ACCEPT CURRENT FROM TIME.
+             COMPUTE CURRENT = CURRENT * QUESTION-1
               MOVE CURRENT TO RND.
-              DIVIDE RND BY 4 GIVING C REMAINDER QUESTION-1.
+              DIVIDE RND BY 4 GIVING C REMAINDER R.
               IF R = 0 THEN
-                MOVE 1 TO R
-             DISPLAY "NOON ACTIVITY: "NOON-ACTIVITY(QUESTION-1).
+                MOVE 1 TO R.
+             DISPLAY "NOON ACTIVITY: "NOON-ACTIVITY(R).
 
             ACCEPT CURRENT FROM TIME.
+             COMPUTE CURRENT = CURRENT * QUESTION-1
               MOVE CURRENT TO RND.
-              DIVIDE RND BY 4 GIVING C REMAINDER QUESTION-1.
+              DIVIDE RND BY 4 GIVING C REMAINDER R.
               IF R = 0 THEN
-                MOVE 1 TO R
-             DISPLAY "EVENING ACTIVITY: "EVENING-ACTIVITY(QUESTION-1).
+                MOVE 1 TO R.
+             DISPLAY "EVENING ACTIVITY: "EVENING-ACTIVITY(R).
+
             *> end our program
             STOP RUN.
