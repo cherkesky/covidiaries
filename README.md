@@ -5,7 +5,7 @@
 ### by Caty Chapman | [LinkedIn](http://linkedin.com/in/catysomething)
 
 
-Covid Diary is a fun humoristic activity generator created in COBOL during 2020 Covid-19 quarantime as a 24 hours self inflicted Hackathon challenging oureslves to learn COBOL, a much needed langugae during the pandemic. 
+Covid Diary is a fun humoristic activity generator created in COBOL during 2020 Covid-19 quarantine as a 24-hour self-inflicted Hackathon, challenging ourselves to learn COBOL, a much needed language during the pandemic. 
 
 
 <img src="https://github.com/cherkesky/covidiaries/blob/master/assets/ss1.png" height="200" width="400">
