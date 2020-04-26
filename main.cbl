@@ -27,7 +27,34 @@
               DISPLAY "|      _||  |_|  ||       ||   | | |_|   | ".
               DISPLAY "|     |_ |       | |     | |   | |       | ".
               DISPLAY "|_______||_______|  |___|  |___| |______| ".
-              
+              DISPLAY " ______   ___   _______  ______    __   __ ".
+              DISPLAY "|      | |   | |   _   ||    _ |  |  | |  |".
+              DISPLAY "|  _    ||   | |  |_|  ||   | ||  |  |_|  |".
+              DISPLAY "| | |   ||   | |       ||   |_||_ |       |".
+              DISPLAY "| |_|   ||   | |       ||    __  ||_     _|".
+              DISPLAY "|       ||   | |   _   ||   |  | |  |   |  ".
+              DISPLAY "|______| |___| |__| |__||___|  |_|  |___|  ".
+              DISPLAY "                                           ".
+              DISPLAY "                 \\||//                     ".
+              DISPLAY "               -- (oo) --                   ".
+              DISPLAY "                 //||\\                    ".
+              DISPLAY "                                          ".
+
+              MOVE "HAVE A SNACK" TO MORNING-ACTIVITY(1).
+              MOVE "BINGE NETFLIX" TO MORNING-ACTIVITY(2).
+              MOVE "EXERCISE. HAHA JUST KIDDING" TO MORNING-ACTIVITY(3).
+
+              MOVE "HAVE A SNACK" TO NOON-ACTIVITY(1).
+              MOVE "TAKE A NAP" TO NOON-ACTIVITY(2).
+              MOVE "LEARN COBOL" TO NOON-ACTIVITY(3). 
+
+              MOVE "HAVE A SNACK" TO EVENING-ACTIVITY(1).
+              MOVE "THINK OF A $1M IDEA" TO EVENING-ACTIVITY(2).
+              MOVE "PLAN THE NEXT VACATION" TO EVENING-ACTIVITY(3).  
+
+              DISPLAY "What is your name?".
+              ACCEPT USER-NAME.
+              display "Hello, " USER-NAME.
               DISPLAY "What is your name?".
               ACCEPT USER-NAME.
               DISPLAY "Hello, " USER-NAME.
