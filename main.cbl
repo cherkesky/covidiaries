@@ -35,8 +35,8 @@
               DISPLAY "|       ||   | |   _   ||   |  | |  |   |  ".
               DISPLAY "|______| |___| |__| |__||___|  |_|  |___|  ".
               DISPLAY "                                           ".
-              DISPLAY "                  \__/                     ".
-              DISPLAY "                  (oo)                     ".
+              DISPLAY "                 \\||//                     ".
+              DISPLAY "               -- (oo) --                   ".
               DISPLAY "                 //||\\                    ".
               DISPLAY "                                          ".
 
