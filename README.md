@@ -2,7 +2,7 @@
 <img src="https://raw.githubusercontent.com/cherkesky/covidiaries/master/assets/covid-diary.png" height="400" width="600">
 
 ### by Guy Cherkesky | [LinkedIn](http://linkedin.com/in/cherkesky) | [Website](http://cherkesky.com) 
-### by Caty Cherkesky | [LinkedIn](http://linkedin.com/in/catybchapman)
+### by Caty Cherkesky | [LinkedIn](https://www.linkedin.com/in/catycherkesky)
 
 
 Covid Diary is a fun humoristic activity generator created in COBOL during 2020 Covid-19 quarantine as a 24-hour self-inflicted Hackathon, challenging ourselves to learn COBOL, a much needed language during the pandemic. 
