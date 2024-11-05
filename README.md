@@ -1,7 +1,7 @@
 
 <img src="https://raw.githubusercontent.com/cherkesky/covidiaries/master/assets/covid-diary.png" height="400" width="600">
 
-### by Guy Cherkesky | [LinkedIn](http://linkedin.com/in/cherkesky) | [Website](http://cherkesky.com) 
+### by Guy Cherkesky | [LinkedIn](http://linkedin.com/in/cherkesky)
 ### by Caty Cherkesky | [LinkedIn](https://www.linkedin.com/in/catycherkesky)
 
 
